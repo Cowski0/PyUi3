@@ -1,2 +1,5 @@
 # PyUi3
 Win UI 3 Fluent theme, made in PyQt.
+
+## screenshot  
+![Screenshot 2022-09-03 165113](https://user-images.githubusercontent.com/97522577/188259512-b838f093-79eb-4f6e-964f-0e28f263f26d.png)
