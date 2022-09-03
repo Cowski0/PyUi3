@@ -1,4 +1,4 @@
-# PyUi3
+# PyUi3 in progress (probably will take a while, just started)
 Win UI 3 Fluent theme, made in PyQt.  
   
   
