@@ -20,7 +20,7 @@ class FWindow(AcrylicWindow):
         #get win version
         key = OpenKey(HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows NT\CurrentVersion')
         value = QueryValueEx(key,"DisplayVersion")
-        self.windowEffect.setMicaEffect(self.winId(), True)
+        self.windowEffect.setMicaEffect(self.winId(), False)
         if value[0] == "22H2":
             no_sup()
             exit()
