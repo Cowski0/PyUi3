@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, QtCore,QtGui
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
-from qframelesswindow import TitleBar, AcrylicWindow
+from window import TitleBar, AcrylicWindow
 from winreg import *
 from PyUi3 import DARKTHEME
 
@@ -20,6 +20,7 @@ class FWindow(AcrylicWindow):
         #get win version
         key = OpenKey(HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows NT\CurrentVersion')
         value = QueryValueEx(key,"DisplayVersion")
+        self.windowEffect.setMicaEffect(self.winId(), True)
         if value[0] == "22H2":
             no_sup()
             exit()
