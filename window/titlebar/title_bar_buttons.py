@@ -172,11 +172,11 @@ class CloseButton(TitleBarButton):
             },
             "hover": {
                 'background': (232, 17, 35),
-                "icon": ":/framelesswindow/close_black.svg"
+                "icon": ":/framelesswindow/close_white.svg"
             },
             "pressed": {
                 'background': (241, 112, 122),
-                "icon": ":/framelesswindow/close_black.svg"
+                "icon": ":/framelesswindow/close_white.svg"
             },
         }
         super().__init__(defaultStyle, parent)

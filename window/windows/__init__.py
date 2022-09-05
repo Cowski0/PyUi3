@@ -142,14 +142,6 @@ class AcrylicWindow(WindowsFramelessWindow):
                             Qt.WindowMinMaxButtonsHint)
         self.windowEffect.addWindowAnimation(self.winId())
 
-        if "Windows-7" in platform():
-            self.windowEffect.addShadowEffect(self.winId())
-            self.windowEffect.setAeroEffect(self.winId())
-        else:
-            self.windowEffect.setAcrylicEffect(self.winId())
-            if sys.getwindowsversion().build >= 22000:
-                self.windowEffect.addShadowEffect(self.winId())
-
         self.setStyleSheet("background:transparent")
 
     def nativeEvent(self, eventType, message):
