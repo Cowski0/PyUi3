@@ -81,19 +81,11 @@ class Window(FWindow):
                 self.stack.setGeometry(0, 48, self.width(), self.height()-48)
 
             self.buttonshowcase.setGeometry(20,20, self.main.width()-40, 100)
-            self.homepage.setGeometry(0,0,self.main.width(),self.main.height())
 
         return super(Window, self).eventFilter(obj, event)
 
 
 if __name__ == "__main__":
-    # enable dpi scale
-    QApplication.setHighDpiScaleFactorRoundingPolicy(
-        Qt.HighDpiScaleFactorRoundingPolicy.PassThrough)
-    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
-    QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
-
-    # run app
     app = QApplication(sys.argv)
     demo = Window()
     demo.show()
